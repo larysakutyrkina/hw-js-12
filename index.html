@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> homework12 cycled-slider</title>
+    <style>
+      .image-to-show {
+        width: 400px;
+        height: 400px;
+      }
+
+      .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .btn {
+        color: white;
+        text-decoration: none;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 3px;
+      }
+      .stop {
+        background: rgb(214, 62, 62);
+        box-shadow: 0 -3px rgb(167, 57, 53) inset;
+      }
+      .play {
+        background: rgb(64,199,129);
+        box-shadow: 0 -3px rgb(53,167,110) inset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="images-wrapper">
+      <img src="./img/1.jpg" alt="image of game" class="image-to-show" />
+      <img src="./img/2.jpg" alt="image of game" class="image-to-show" hidden />
+      <img src="./img/3.JPG" alt="image of game" class="image-to-show" hidden />
+      <img src="./img/4.png" alt="image of game" class="image-to-show" hidden/>
+    </div>
+
+    <button class="stop btn"> Stop </button>
+    <button class="play btn"> Play </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
